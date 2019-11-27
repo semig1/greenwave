@@ -1,0 +1,137 @@
+@charset "utf-8";
+body{
+	background-color: #C2C2C2;
+}
+.wrapper {
+		display: grid; /*Angiver grid*/
+		grid-template-columns: repeat(12, [col-start] 1fr); /*Specificerer hvor mange rækker grid-layoutet skal have*/
+		grid-gap: 20px; /*Mellemrummet mellem hver "grid"*/
+		font: 1.2em Helvetica, arial, sans-serif; /* Vi ville gerne have en klassisk font til at være med til at repræsentere vores brand Green Wave. I denne linje har vi angivet at den primære font skal være Helvetica og hvis dette ikke er tilgængeligt bruger vi Arial. Uden fødder (sans-serif)*/
+		margin: 0 auto;
+}
+.wrapper > * {
+  		grid-column: col-start / span 12;
+		border: 1px solid #000000; /* Her angiver vi at vi gerne vil have en border på vores elementer. Vi giver borderne en 2px tykkelse og giver dem en farve*/
+		background-color: #ffffff; /*Baggrundsfarve på vores design. Vi valgte denne farve for ikke at skabe forvirring til brugerne.*/
+		border-radius: 5px;/*Runder kanterne af på borderne*/
+	padding: 10px;/*Angiver bordernes "usynlige" kanter omkring de elementer som vi har indsat*/
+}
+.logo{
+    height:60px;
+    width:60px;
+    float: left;
+    margin-top: 5px;
+	margin-left: -20px;
+}
+
+@media (min-width: 1px) { /*Oven i dette har vi lavet en på min-width på 700px for at have det endnu nemmere ved at navigere på websitet hvis nu at man havde en større viewport*/
+	
+ /* På nedenstående angiver vi alle vores elementer med en class for at angive hvor de skal placeres i vores grid*/
+	.main-head {
+		grid-column: col-start/span 12;
+		grid-row: 1/5;
+		padding: 0%;
+}
+	#pic{
+	grid-column: 1;
+	width: 65%;
+	height: auto;
+	}
+/*NAVIGATIONSBAR*/
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #E1EFDE;
+  padding-left: 40%;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 75px;
+  text-decoration: none;
+  margin-top: 0px;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #494949;}
+
+ul.topnav li a.active {background-color: #88C1F2;}
+
+ul.topnav li.right {float: none;}
+/*NAVIGATIONSBAR*/
+body {margin: 0;}
+
+ul.navbar {
+  padding-left: 19%;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #E1EFDE;
+}
+
+ul.navbar li {float: left;}
+
+ul.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 75px;
+  text-decoration: none;
+  margin-top: -1%;
+}
+
+ul.navbar li a:hover:not(.active) {background-color: #FFFFFF;}
+
+ul.navbar li a.active {background-color: #88C1F2;}
+
+ul.navbar li.right {float: none;}
+@media screen and (max-width : 1250px ){
+  ul.navbar li.center, 
+  ul.navbar li {float: none;}
+}
+.logo{
+    height:60px;
+    width:60px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+  .content {
+    grid-column: col-start 2 / span 8;
+    grid-row: 5/32;
+	background-color: 
+}
+  .side {
+    grid-column: col-start 10 / span 2;
+    grid-row: 5/32;
+  }
+ul li {
+	display: inline; 
+}
+footer{
+    background-color: #e1efde;
+    width: 100%;
+	list-style-type: none;
+	float: left;
+	color: black;
+	display: grid;
+	grid-column: 1/12;
+	padding-left: 6.5%;
+}
+.kontakt {
+	display: grid;
+	grid-column: 2/12;
+	}
+	.fblogo{
+		width: 35px;
+	}
+	.iglogo{
+		width: 30px;
+		margin-left: 42%;
+	}
