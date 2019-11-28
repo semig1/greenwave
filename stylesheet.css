@@ -43,8 +43,13 @@ footer{
 	}
   .side {
 	grid-column: col-start 10 / span 2;
-	  grid-row: 5/32;}
-
+	  grid-row: 5/32;
+}
+.sidebar {
+	margin-right: 35%;
+	grid-column: col-start 10 / span 2;
+	grid-row: 5/32;
+}
 .kontakt {	
 	grid-column: 1;
 	grid-row: 1;
@@ -178,7 +183,7 @@ ul.navbar li.right {float: none;}
   .side {
 	grid-column: col-start 10 / span 2;
     grid-row: 5/32;
-	 display: none;
+	display: none;
   }
 ul li {
 	display: inline; 
@@ -204,7 +209,12 @@ footer{
 		width: 30px;
 		margin-left: 42%;
 	}
-	
+.sidebar {
+	margin-right: 35%;
+	grid-column: col-start 10 / span 2;
+	grid-row: 5/32;
+	display: none;
+}	
 	
 	
 /*Morten's shit-----------------------------*/
