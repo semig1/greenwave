@@ -171,13 +171,14 @@ ul.navbar li.right {float: none;}
     margin-left: 15px;
 }
   .content {
-    grid-column: col-start 2 / span 8;
+    grid-column: col-start 2 / span 10;
     grid-row: 5/32;
 	
 	}
   .side {
 	grid-column: col-start 10 / span 2;
     grid-row: 5/32;
+	 display: none;
   }
 ul li {
 	display: inline; 
