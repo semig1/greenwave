@@ -1,4 +1,4 @@
-@charset "utf-8";
+	@charset "utf-8";
 body{
 	background-color: #C2C2C2;
 }
@@ -24,7 +24,40 @@ body{
 	margin-left: -20px;
 }
 
-@media (min-width: 1px) { /*Oven i dette har vi lavet en på min-width på 700px for at have det endnu nemmere ved at navigere på websitet hvis nu at man havde en større viewport*/
+footer{
+    background-color: #e1efde;
+    width: 100%;
+	list-style-type: none;
+	float: left;
+	color: black;
+	display: grid;
+	grid-column: 1/12;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+
+}
+.kontakt {	
+	grid-column: 1;
+	grid-row: 1;
+	}
+	.fblogo{
+		float:none;
+		width: 35px;
+		grid-column: 2;
+		grid-row: 1;
+	}
+	.iglogo{
+		float: none;
+		width: 30px;
+		grid-column: 3;
+		grid-row:1;
+	}
+li{
+	list-style-type: none;
+}
+	
+/*	
+@media (min-width: 1px) { Oven i dette har vi lavet en på min-width på 700px for at have det endnu nemmere ved at navigere på websitet hvis nu at man havde en større viewport*/
 	
  /* På nedenstående angiver vi alle vores elementer med en class for at angive hvor de skal placeres i vores grid*/
 	.main-head {
@@ -32,6 +65,7 @@ body{
 		grid-row: 1/5;
 		padding: 0%;
 }
+	
 	#pic{
 	grid-column: 1;
 	width: 65%;
@@ -91,10 +125,35 @@ ul.navbar li a:hover:not(.active) {background-color: #FFFFFF;}
 ul.navbar li a.active {background-color: #88C1F2;}
 
 ul.navbar li.right {float: none;}
-@media screen and (max-width : 1250px ){
+/*Mortens shit---------------------------------------*/
+	.lortecontent{
+	grid-column: 3/10;
+   	display: grid;
+	grid-template-columns: 1fr  1fr  1fr 1fr;
+    grid-template-areas:
+    "whodis whodis whodis whodis"
+    "lortelort lortelort logopic logopic"
+	"sec sec logopic logopic";
+	}
+	.whodis{
+		grid-area: whodis;
+	}
+	.lortelort{
+		grid-area: lortelort;
+	}
+	section{
+		grid-area: sec;
+	}
+	#logopic{
+		grid-area: logopic;
+		position: relative;
+		
+	}
+/*---------------------------------------Slut på Mortens*/
+@media screen and (max-width : 1250px ){ /*<---------- mobil her fra*/
   ul.navbar li.center, 
   ul.navbar li {float: none;}
-}
+
 .logo{
     height:60px;
     width:60px;
@@ -105,10 +164,10 @@ ul.navbar li.right {float: none;}
   .content {
     grid-column: col-start 2 / span 8;
     grid-row: 5/32;
-	background-color: 
-}
+	
+	}
   .side {
-    grid-column: col-start 10 / span 2;
+	grid-column: col-start 10 / span 2;
     grid-row: 5/32;
   }
 ul li {
@@ -122,7 +181,6 @@ footer{
 	color: black;
 	display: grid;
 	grid-column: 1/12;
-	padding-left: 6.5%;
 }
 .kontakt {
 	display: grid;
@@ -135,3 +193,33 @@ footer{
 		width: 30px;
 		margin-left: 42%;
 	}
+	
+	
+	
+/*Morten's shit-----------------------------*/
+.lortecontent{
+	grid-column: 2/12;
+   	display: grid;
+	grid-template-columns: 1fr  1fr  1fr 1fr;
+    grid-template-areas:
+    "whodis whodis  whodis whodis"
+    "lortelort lortelort lortelort lortelort"
+	"sec sec sec sec";
+	}
+	.whodis{
+		grid-area: whodis;
+	}
+	.lortelort{
+		grid-area: lortelort;
+	}
+	section{
+		grid-area: sec;
+	}
+	#logopic{
+		
+		display: none;
+	}
+	
+/*Slut på Mortens*/
+	
+	}/*<-------- LUKKER MEDIA QUERY!! MUY IMPORTANTE MUCHACHOS*/
