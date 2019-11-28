@@ -36,11 +36,22 @@ footer{
 	grid-template-columns: auto auto auto auto;
 
 }
+  .jaja{
+	text-align: center;
+	margin-top: 5%;
+}
   .content {
     grid-column: col-start 2 / span 8;
     grid-row: 5/32;
 	
 	}
+
+.tekst {
+	
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 10%;
+} 
   .side {
 	grid-column: col-start 10 / span 2;
 	  grid-row: 5/32;
@@ -49,6 +60,17 @@ footer{
 	margin-right: 35%;
 	grid-column: col-start 10 / span 2;
 	grid-row: 5/32;
+	
+}
+.oralemonfrizo {
+	margin-right: 35%;
+	grid-column: col-start 10 / span 2;
+	grid-row: 5/32;
+	width: 145%;
+	
+	background-color: #ffffff;
+	
+	
 }
 .kontakt {	
 	grid-column: 1;
@@ -243,4 +265,4 @@ footer{
 	
 /*Slut på Mortens*/
 	
-	}/*<-------- LUKKER MEDIA QUERY!! MUY IMPORTANTE MUCHACHOS*/
+	}/*<-------- LUKKER MEDIA QUERY!! MUY IMPORTANTE MUCHACHOS*/	
